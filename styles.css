@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('img/wallpaper.gif');
+    background-image: url('wallpaper.gif');
     background-size: cover; /* A imagem cobre toda a tela */
     background-position: center center; /* Centraliza a imagem */
     background-attachment: fixed; /* A imagem fica fixa enquanto você rola a página */
