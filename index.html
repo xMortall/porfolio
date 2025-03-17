@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xMortal</title>
+    <link rel="icon" type="img/rowlet.jpg" href="img/rowlet.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu no canto superior direito -->
+    <nav class="menu">
+        <button onclick="changePage('inicio')">Início</button>
+        <button onclick="changePage('projetos')">Projetos</button>
+        <button onclick="changePage('contato')">Contato</button>
+    </nav>
+
+    <!-- Conteúdo Centralizado -->
+    <div id="content">
+        <!-- Página Inicial -->
+        <section id="inicio" class="page active">
+            <h1>xMortal</h1>
+            <div class="buttons">
+                <a href="https://gamejolt.com/@xMortall_" target="_blank">
+                    <img src="img/Gamejolt.png" alt="GameJolt">
+                </a>
+                <a href="https://www.youtube.com/@xmortall__" target="_blank">
+                    <img src="img/youtube-play.png" alt="Youtube">
+                </a>
+                <a href="https://github.com/xMortall" target="_blank">
+                    <img src="img/GitHub_Logo.png" alt="Github">
+                </a>
+            </div>
+        </section>
+
+        <!-- Página de Projetos -->
+        <section id="projetos" class="page">
+            <h2>Projetos</h2>
+            <div class="project">
+                <div class="project-img-container">
+                    <img src="img/undertaleclicekr.png" alt="Projeto 1">
+                </div>
+                <div class="project-info">
+                    <h3>UndertaleClicker</h3>
+                    <p>Uma copia de https://cookieclicker.com/ feito para conhecimento.</p>
+                    <a href="https://gamejolt.com/games/UndertaleClicker/965470" target="_blank" class="ver-mais">Ver Mais</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-img-container">
+                    <img src="project2.jpg" alt="Projeto 2">
+                </div>
+                <div class="project-info">
+                    <h3>Outro Projeto</h3>
+                    <p>Outra breve descrição sobre este projeto específico.</p>
+                    <a href="https://seusite.com/projeto2" target="_blank" class="ver-mais">Ver Mais</a>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <!-- Página de Contato -->
+        <section id="contato" class="page">
+            <h2>Contato</h2>
+            <p>Entre em contato pelo e-mail: <strong>emanuelborges13998@gmail.com</strong></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
