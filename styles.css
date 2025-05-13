@@ -87,13 +87,15 @@ h2 {
     align-items: center;
     justify-content: center;
     margin: 30px auto;
-    width: 60%;
+    width: 100%;            /* aumenta a largura */
+    min-height: 100px;     /* aumenta a altura mínima */
     background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #808080; /* Borda cinza */
+    padding: 15px;         /* mais espaço interno */
+    border-radius: 15px;   /* cantos mais suaves */
+    border: 2px solid #808080;
     transition: transform 0.3s ease;
 }
+
 
 .project:hover {
     transform: scale(1.05);
