@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-image: url('wallpaper.gif');
     background-size: cover; /* A imagem cobre toda a tela */
     background-position: center center; /* Centraliza a imagem */
@@ -83,11 +84,13 @@ h2 {
 /* Seção de Projetos */
 .project {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 30px auto;
     width: 90%;            /* aumenta a largura */
+    min-height: 100px;     /* aumenta a altura mínima */
     background: #222;
     padding: 15px;         /* mais espaço interno */
     border-radius: 15px;   /* cantos mais suaves */
