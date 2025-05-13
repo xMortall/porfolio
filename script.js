@@ -2,23 +2,19 @@ function changePage(pageId) {
     const currentPage = document.querySelector(".page.active");
     const newPage = document.getElementById(pageId);
 
-    if (currentPage !== newPage) {
-        if (currentPage) {
-            // Remove a página atual com animação
-            currentPage.style.transform = "translate(-50%, -60%)";
-            currentPage.style.opacity = "0";
+    if (currentPage === newPage) return;
 
-            setTimeout(() => {
-                currentPage.classList.remove("active");
-                newPage.classList.add("active");
-                newPage.style.transform = "translate(-50%, -40%)";
-                newPage.style.opacity = "1";
-            }, 500);
-        } else {
-            // Primeira exibição
-            newPage.classList.add("active");
-            newPage.style.transform = "translate(-50%, -40%)";
-            newPage.style.opacity = "1";
-        }
+    if (currentPage) {
+        // Fade out atual
+        currentPage.classList.remove("active");
     }
+
+    // Aguardar fade-out antes do fade-in
+    setTimeout(() => {
+        newPage.classList.add("active");
+
+        if (newPage.classList.contains("top-page")) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, 400); // tempo igual ou maior que o fade-out
 }
