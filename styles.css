@@ -35,12 +35,11 @@ body {
 /* Estilos das Páginas */
 .page {
     position: absolute;
-    width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     opacity: 0;
-    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s ease, opacity 0.5s ease;
     display: none;
 }
 
@@ -49,6 +48,7 @@ body {
     opacity: 1;
     transform: translate(-50%, -40%);
 }
+
 
 
 h1 {
