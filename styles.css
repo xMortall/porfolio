@@ -88,7 +88,6 @@ h2 {
     justify-content: center;
     margin: 30px auto;
     width: 90%;            /* aumenta a largura */
-    min-height: 100px;     /* aumenta a altura mínima */
     background: #222;
     padding: 15px;         /* mais espaço interno */
     border-radius: 15px;   /* cantos mais suaves */
