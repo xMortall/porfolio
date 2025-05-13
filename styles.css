@@ -87,7 +87,7 @@ h2 {
     align-items: center;
     justify-content: center;
     margin: 30px auto;
-    width: 100%;            /* aumenta a largura */
+    width: 90%;            /* aumenta a largura */
     min-height: 100px;     /* aumenta a altura mínima */
     background: #222;
     padding: 15px;         /* mais espaço interno */
